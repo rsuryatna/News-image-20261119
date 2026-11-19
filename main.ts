@@ -3,9 +3,9 @@
 // The poster is a single 1024x1024 PNG drawn once, with PIL, as a
 // newspaper front page for Thursday 19 November 2026: six verified
 // stories of the day, a masthead, and the date in a black band across
-// the top. The image bytes live in image-data.ts as base64, so this
-// program needs nothing but the Node standard library and no network;
-// every run writes exactly the same file.
+// the top. The image bytes live in image-data.ts as one single base64
+// line, so this program needs nothing but the Node standard library
+// and no network; every run writes exactly the same file.
 import { Buffer } from "node:buffer";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
